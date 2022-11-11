@@ -224,7 +224,7 @@ static void renderOpenGL()
     ground.Render(*renderHelper);
     pipe.Render(*renderHelper);
     ball1.Render(*renderHelper);
-}//hello
+}
 
 int main(void)
 {
