@@ -1,18 +1,18 @@
 ﻿  Ball.cpp
   Pipe.cpp
-C:\Users\marsh\Desktop\Davis\Programming\Simulation and AI\Davis-Johnson-Simulation-and-AI\ACW\Source\Pipe.cpp(15,19): warning C4305: '=': truncation from 'double' to 'float'
+C:\Simulation and AI - 684191\Davis-Johnson-Simulation-and-AI\ACW\Source\Pipe.cpp(15,19): warning C4305: '=': truncation from 'double' to 'float'
   Floor.cpp
   Camera.cpp
   GameEntity.cpp
   App.cpp
-C:\Users\marsh\Desktop\Davis\Programming\Simulation and AI\Davis-Johnson-Simulation-and-AI\ACW\Source\App.cpp(105,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\marsh\Desktop\Davis\Programming\Simulation and AI\Davis-Johnson-Simulation-and-AI\ACW\Source\App.cpp(106,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\marsh\Desktop\Davis\Programming\Simulation and AI\Davis-Johnson-Simulation-and-AI\ACW\Source\App.cpp(110,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\marsh\Desktop\Davis\Programming\Simulation and AI\Davis-Johnson-Simulation-and-AI\ACW\Source\App.cpp(111,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\marsh\Desktop\Davis\Programming\Simulation and AI\Davis-Johnson-Simulation-and-AI\ACW\Source\App.cpp(113,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\marsh\Desktop\Davis\Programming\Simulation and AI\Davis-Johnson-Simulation-and-AI\ACW\Source\App.cpp(114,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\marsh\Desktop\Davis\Programming\Simulation and AI\Davis-Johnson-Simulation-and-AI\ACW\Source\App.cpp(123,31): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\marsh\Desktop\Davis\Programming\Simulation and AI\Davis-Johnson-Simulation-and-AI\ACW\Source\App.cpp(286,42): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Simulation and AI - 684191\Davis-Johnson-Simulation-and-AI\ACW\Source\App.cpp(105,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Simulation and AI - 684191\Davis-Johnson-Simulation-and-AI\ACW\Source\App.cpp(106,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Simulation and AI - 684191\Davis-Johnson-Simulation-and-AI\ACW\Source\App.cpp(110,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Simulation and AI - 684191\Davis-Johnson-Simulation-and-AI\ACW\Source\App.cpp(111,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Simulation and AI - 684191\Davis-Johnson-Simulation-and-AI\ACW\Source\App.cpp(113,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Simulation and AI - 684191\Davis-Johnson-Simulation-and-AI\ACW\Source\App.cpp(114,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Simulation and AI - 684191\Davis-Johnson-Simulation-and-AI\ACW\Source\App.cpp(123,31): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Simulation and AI - 684191\Davis-Johnson-Simulation-and-AI\ACW\Source\App.cpp(286,42): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
   GuiHelpers.cpp
   RenderHelpers.cpp
   imgui.cpp
@@ -84,6 +84,6 @@ imgui_impl_glfw.obj : error LNK2019: unresolved external symbol glfwGetJoystickB
 imgui_impl_glfw.obj : error LNK2019: unresolved external symbol glfwSetClipboardString referenced in function "void __cdecl ImGui_ImplGlfw_SetClipboardText(void *,char const *)" (?ImGui_ImplGlfw_SetClipboardText@@YAXPEAXPEBD@Z)
 imgui_impl_glfw.obj : error LNK2019: unresolved external symbol glfwGetClipboardString referenced in function "char const * __cdecl ImGui_ImplGlfw_GetClipboardText(void *)" (?ImGui_ImplGlfw_GetClipboardText@@YAPEBDPEAX@Z)
 imgui_impl_glfw.obj : error LNK2019: unresolved external symbol glfwGetWin32Window referenced in function "bool __cdecl ImGui_ImplGlfw_Init(struct GLFWwindow *,bool,enum GlfwClientApi)" (?ImGui_ImplGlfw_Init@@YA_NPEAUGLFWwindow@@_NW4GlfwClientApi@@@Z)
-C:\Users\marsh\Desktop\Davis\Programming\Simulation and AI\Davis-Johnson-Simulation-and-AI\Dependencies\GLFW\lib-vc2019\glfw3.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
-C:\Users\marsh\Desktop\Davis\Programming\Simulation and AI\Davis-Johnson-Simulation-and-AI\Dependencies\GLEW\lib\Release\Win32\glew32s.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
-C:\Users\marsh\Desktop\Davis\Programming\Simulation and AI\Davis-Johnson-Simulation-and-AI\x64\Debug\ACW.exe : fatal error LNK1120: 58 unresolved externals
+C:\Simulation and AI - 684191\Davis-Johnson-Simulation-and-AI\Dependencies\GLFW\lib-vc2019\glfw3.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\Simulation and AI - 684191\Davis-Johnson-Simulation-and-AI\Dependencies\GLEW\lib\Release\Win32\glew32s.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\Simulation and AI - 684191\Davis-Johnson-Simulation-and-AI\x64\Debug\ACW.exe : fatal error LNK1120: 58 unresolved externals

@@ -48,7 +48,7 @@ const unsigned int SCR_WIDTH = 800;
 const unsigned int SCR_HEIGHT = 600;
 
 // camera
-Camera camera(glm::vec3(0.0f, 1.5f, 9.0f));
+Camera camera(glm::vec3(0.0f, 0.0f, 15.0f));
 float lastX = SCR_WIDTH / 2.0f;
 float lastY = SCR_HEIGHT / 2.0f;
 bool firstMouse = true;
@@ -189,7 +189,7 @@ void renderImGui()
 
     camera.RenderGui(*guiHelper);
 
-    pipe.RenderGui(*guiHelper);
+    //pipe.RenderGui(*guiHelper);
     if (!isPaused)
     {
         ball1.RenderGui(*guiHelper);
@@ -222,7 +222,7 @@ static void renderOpenGL()
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     camera.Render(*renderHelper);
     ground.Render(*renderHelper);
-    pipe.Render(*renderHelper);
+    //pipe.Render(*renderHelper);
     ball1.Render(*renderHelper);
 }
 
@@ -244,11 +244,11 @@ int main(void)
     isPaused = false;
 
     ground.Translate(glm::vec3(0.0f, -0.5f, 0.0f));
-    ground.Scale(glm::vec3(10.0f, 1.0f, 10.0f));
+    ground.Scale(glm::vec3(10.0f, 10.0f, 1.0f));
 
     pipe.Translate(glm::vec3(2.0f, 0.0f, 2.0f));
 
-    ball1.Translate(glm::vec3(-2.0f, 2.0f, 0.0f));
+    ball1.Translate(glm::vec3(0.0f, 0.0f, 1.0f));
 
     while (!glfwWindowShouldClose(window))
     {
@@ -279,6 +279,12 @@ int main(void)
             if (updateTime < 0)
             {
                 updateTime = 1.0 / 100.0f;
+                ball1.Update(updateTime);
+                //ball edge R = ball pos + radius
+                //ball edge L = ball pos - radius
+                //ball edge T = ball pos + radius
+                //ball edge B = ball pos - radius
+                //check collision (ball edge R < horizontal & ball edge)
             }
         }
         else

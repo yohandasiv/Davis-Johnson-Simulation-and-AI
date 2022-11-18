@@ -24,5 +24,5 @@ void Ball::RenderGui(const IGuiHelpers& pHelper)
 
 void Ball::Update(float pDeltaTime)
 {
-	
+	Translate(m_Velocity * pDeltaTime);
 }

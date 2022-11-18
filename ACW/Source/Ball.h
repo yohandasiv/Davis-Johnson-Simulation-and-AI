@@ -31,7 +31,7 @@ public:
 
     void SetVelocity(glm::vec3 pVelocity)
     {
-
+        m_Velocity = pVelocity;
     }
 
     float GetRadius() const
