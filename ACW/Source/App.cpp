@@ -13,6 +13,7 @@ https://github.com/ocornut/imgui
 #include "imgui/imgui.h"
 #include "imgui/imgui_impl_glfw.h"
 #include "imgui/imgui_impl_opengl3.h"
+#include "glm/ext.hpp"
 
 /*
 GLFW is an Open Source, multi-platform library for OpenGL, OpenGL ES and Vulkan development on the desktop.
@@ -42,6 +43,8 @@ https://github.com/g-truc/glm
 #include "Ball.h"
 
 #pragma endregion includes
+
+using namespace std;
 
 // settings
 const unsigned int SCR_WIDTH = 800;
@@ -280,11 +283,13 @@ int main(void)
             {
                 updateTime = 1.0 / 100.0f;
                 ball1.Update(updateTime);
+                cout << glm::to_string(ground.GetPosition()) << endl;
                 //ball edge R = ball pos + radius
                 //ball edge L = ball pos - radius
                 //ball edge T = ball pos + radius
                 //ball edge B = ball pos - radius
-                //check collision (ball edge R < horizontal & ball edge)
+                //horizontal ball edge collide => (ground.GetScale() - ball1.GetRadius())^2 - (ball1.GetPosition() - ground.GetPosition())^2 > 0
+                //vertical ball edge collide => (balledget < wall edge t && balledgeb > wall edge b)
             }
         }
         else

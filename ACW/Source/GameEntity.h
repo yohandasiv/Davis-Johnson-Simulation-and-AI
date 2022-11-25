@@ -29,6 +29,8 @@ public:
 	glm::mat4& GetModel() { return m_Model; }
 	glm::vec3 GetColour() const { return m_Colour; }
 	glm::vec3 & GetColour() { return m_Colour; }
+	glm::vec3 GetScale() const { return { m_Model[0][0], m_Model[1][1], m_Model[2][2] }; }
+	glm::vec3 GetPosition() const { return { m_Model[3][0], m_Model[3][1], m_Model[3][2] }; }
 
 	void Scale(glm::vec3 pScale)
 	{
